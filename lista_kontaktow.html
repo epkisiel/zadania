@@ -1,0 +1,55 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lista kontaktów - warunki</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let contacts=[{
+			name: "Maxwell Wright",
+			phone:"(0191) 719 6495",
+			email:"Curabitur.egestas.nunc@nonummyac.co.uk"
+		},
+		{
+			name:"Raja Villarreal",
+			phone:"0866 398 2895",
+			email:"posuere.vulpate@sed.com"
+		},
+		{
+			name:"Helen Richards",
+			phone:"0800 1111",
+			email:"libero@convallis.edu"
+		}];
+		
+		let wybor=prompt("Wpisz: first - by wyświetlić pierwszy kontakt, last - by wyświetlić ostatni kontakt, new - by dodać nowy kontakt: ");
+		if(wybor=="first")
+		{
+			alert("Imię: "+contacts[0].name+", Telefon: "+contacts[0].phone+", E-mail: "+contacts[0].email);
+		}
+		else if(wybor=="last")
+		{
+			alert("Imię: "+contacts[contacts.length-1].name+", Telefon: "+contacts[contacts.length-1].phone+", E-mail: "+contacts[contacts.length-1].email);
+		}
+		else if(wybor=="new")
+		{
+			let kontakt={
+				name: prompt("Podaj imię: "),
+				phone: prompt("Podaj telefon: "),
+				email: prompt("Podaj e-mail: "),
+			}
+			if(kontakt.name=="" || kontakt.phone=="" || kontakt.email=="")
+			{
+				alert("Nie podano wszystkich wartości. Kontakt nie dodany.");
+			}
+			else{
+				contacts.push(kontakt);
+				alert("Kontakt dodano pomyślnie.");
+			}
+		}
+		else{
+			alert("Wpisano złą wartość.");
+		}
+	</script>
+</body>
+</html>
