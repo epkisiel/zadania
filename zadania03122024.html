@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadania</title>
+</head>
+<body>
+    <script type="text/javascript">
+		alert("Zadanie 1");
+		let x=2;
+		let y=5;
+		if(x>y){
+			alert(x);
+		}else{
+			alert(y);
+		}
+		
+		alert("Zadanie 2");
+		let a=3;
+		let b=-7;
+		let c=2;
+		let iloczyn=a*b*c;
+		if(iloczyn>0){
+			alert("+");
+		}else if(iloczyn<0){
+			alert("-");
+		}else{
+			alert("Wynik jest równy zero");
+		}
+		
+		alert("Zadanie 3");
+        let liczba1=0;
+        let liczba2=-1;
+        let liczba3=4;
+        let zmienna;
+        if(liczba1<liczba2){
+            zmienna=liczba1;
+            liczba1=liczba2;
+            liczba2=zmienna;
+        }
+        if(liczba2<liczba3){
+            zmienna=liczba2;
+            liczba2=liczba3;
+            liczba3=zmienna;
+        }
+        if(liczba1<liczba2){
+            zmienna=liczba1;
+            liczba1=liczba2;
+            liczba2=zmienna;
+        }
+        alert(liczba1+", "+liczba2+", "+liczba3);
+		
+		alert("Zadanie 4");
+        let l1=-5;
+        let l2=-2;
+        let l3=-6;
+        let l4=0;
+        let l5=-1;
+        let najwieksza=l1;
+        if(l1<l2){
+            najwieksza=l2;
+        }
+        if(najwieksza<l3){
+            najwieksza=l3;
+        }
+        if(najwieksza<l4){
+            najwieksza=l4;
+        }
+        if(najwieksza<l5){
+            najwieksza=l5;
+        }
+        alert(najwieksza);
+		
+		alert("Zadanie 5");
+		for(let i=0; i<=15; i++){
+			if(i%2==0){
+				alert(i+" jest parzyste");
+			}else{
+				alert(i+" jest nieparzyste");
+			}
+		}
+		
+		alert("Zadanie 6");
+		let daniel=80;
+		let michal=77;
+		let jakub=88;
+		let sylwia=95;
+		let amelia=68;
+		
+		let ocena_daniela;
+		let ocena_michala;
+		let ocena_jakuba;
+		let ocena_sylwii;
+		let ocena_amelii;
+		
+		if(daniel<60){	ocena_daniela="F";}
+		else if(daniel<70){		ocena_daniela="D";}
+		else if(daniel<80){		ocena_daniela="C";}
+		else if(daniel<90){		ocena_daniela="B";}
+		else{	ocena_daniela="A";}
+		alert("Ocena Daniela: "+ocena_daniela);
+		
+		if(michal<60){	ocena_michala="F";}
+		else if(michal<70){		ocena_michala="D";}
+		else if(michal<80){		ocena_michala="C";}
+		else if(michal<90){		ocena_michala="B";}
+		else{	ocena_michala="A";}
+		alert("Ocena Michała: "+ocena_michala);
+		
+		if(jakub<60){	ocena_jakuba="F";}
+		else if(jakub<70){		ocena_jakuba="D";}
+		else if(jakub<80){		ocena_jakuba="C";}
+		else if(jakub<90){		ocena_jakuba="B";}
+		else{	ocena_jakuba="A";}
+		alert("Ocena Jakuba: "+ocena_jakuba);
+		
+		if(sylwia<60){	ocena_sylwii="F";}
+		else if(sylwia<70){		ocena_sylwii="D";}
+		else if(sylwia<80){		ocena_sylwii="C";}
+		else if(sylwia<90){		ocena_sylwii="B";}
+		else{	ocena_sylwii="A";}
+		alert("Ocena Sylwii: "+ocena_sylwii);
+		
+		if(amelia<60){	ocena_amelia="F";}
+		else if(amelia<70){		ocena_amelii="D";}
+		else if(amelia<80){		ocena_amelii="C";}
+		else if(amelia<90){		ocena_amelii="B";}
+		else{	ocena_amelii="A";}
+		alert("Ocena Amelii: "+ocena_amelii);
+		
+		alert("Zadanie 7");
+		for(let o=1; o<=100; o++){
+			if(o%3==0 && o%5==0){
+				alert("BigMike");
+			}else if(o%3==0){
+				alert("Big");
+			}else if(o%5==0){
+				alert("Mike");
+			}else{
+				alert(o);
+			}
+		}
+		
+		/*alert("Zadanie 8");
+		let ile=0;
+		let l=1;
+		let czy=0;
+		let tablica=[];
+		while(ile<5){
+		let liczba=String(l);
+		let tab=[];
+		while(liczba!=1 || czy!=10000){
+			for(let u=0; u<liczba.length; u++){
+				tab[u]=Number(liczba.charAt(u));
+			}
+			liczba=0;
+			for(let w=0; w<tab.length; w++){
+				liczba=liczba+tab[w]*tab[w];
+			}
+			czy++;
+		}
+		if(liczba==1){
+		tablica[ile]=l;
+		ile++;}
+		l++;
+		}
+		
+		alert("Zadanie 9");*/
+		
+	</script>
+</body>
+</html>
