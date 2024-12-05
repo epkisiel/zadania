@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadania 03.12.2024</title>
+</head>
+<body>
+    <script type="text/javascript">
+		document.write("Zadanie 1<br>");
+		let x=2;
+		let y=5;
+		if(x>y){
+			document.write(x);
+		}else{
+			document.write(y);
+		}
+		
+		document.write("<br><br>Zadanie 2<br>");
+		let a=3;
+		let b=-7;
+		let c=2;
+		let iloczyn=a*b*c;
+		if(iloczyn>0){
+			document.write("+");
+		}else if(iloczyn<0){
+			document.write("-");
+		}else{
+			document.write("Wynik jest równy zero");
+		}
+		
+		document.write("<br><br>Zadanie 3<br>");
+        let liczba1=0;
+        let liczba2=-1;
+        let liczba3=4;
+        let zmienna;
+        if(liczba1<liczba2){
+            zmienna=liczba1;
+            liczba1=liczba2;
+            liczba2=zmienna;
+        }
+        if(liczba2<liczba3){
+            zmienna=liczba2;
+            liczba2=liczba3;
+            liczba3=zmienna;
+        }
+        if(liczba1<liczba2){
+            zmienna=liczba1;
+            liczba1=liczba2;
+            liczba2=zmienna;
+        }
+        document.write(liczba1+", "+liczba2+", "+liczba3);
+		
+		document.write("<br><br>Zadanie 4<br>");
+        let l1=-5;
+        let l2=-2;
+        let l3=-6;
+        let l4=0;
+        let l5=-1;
+        let najwieksza=l1;
+        if(l1<l2){
+            najwieksza=l2;
+        }
+        if(najwieksza<l3){
+            najwieksza=l3;
+        }
+        if(najwieksza<l4){
+            najwieksza=l4;
+        }
+        if(najwieksza<l5){
+            najwieksza=l5;
+        }
+        document.write(najwieksza);
+		
+		document.write("<br><br>Zadanie 5<br>");
+		for(let i=0; i<=15; i++){
+			if(i%2==0){
+				document.write(i+" jest parzyste<br>");
+			}else{
+				document.write(i+" jest nieparzyste<br>");
+			}
+		}
+		
+		document.write("<br>Zadanie 6<br>");
+		let daniel=80;
+		let michal=77;
+		let jakub=88;
+		let sylwia=95;
+		let amelia=68;
+		
+		let ocena_daniela;
+		let ocena_michala;
+		let ocena_jakuba;
+		let ocena_sylwii;
+		let ocena_amelii;
+		
+		if(daniel<60){	ocena_daniela="F";}
+		else if(daniel<70){		ocena_daniela="D";}
+		else if(daniel<80){		ocena_daniela="C";}
+		else if(daniel<90){		ocena_daniela="B";}
+		else{	ocena_daniela="A";}
+		document.write("Ocena Daniela: "+ocena_daniela);
+		
+		if(michal<60){	ocena_michala="F";}
+		else if(michal<70){		ocena_michala="D";}
+		else if(michal<80){		ocena_michala="C";}
+		else if(michal<90){		ocena_michala="B";}
+		else{	ocena_michala="A";}
+		document.write("<br>Ocena Michała: "+ocena_michala);
+		
+		if(jakub<60){	ocena_jakuba="F";}
+		else if(jakub<70){		ocena_jakuba="D";}
+		else if(jakub<80){		ocena_jakuba="C";}
+		else if(jakub<90){		ocena_jakuba="B";}
+		else{	ocena_jakuba="A";}
+		document.write("<br>Ocena Jakuba: "+ocena_jakuba);
+		
+		if(sylwia<60){	ocena_sylwii="F";}
+		else if(sylwia<70){		ocena_sylwii="D";}
+		else if(sylwia<80){		ocena_sylwii="C";}
+		else if(sylwia<90){		ocena_sylwii="B";}
+		else{	ocena_sylwii="A";}
+		document.write("<br>Ocena Sylwii: "+ocena_sylwii);
+		
+		if(amelia<60){	ocena_amelia="F";}
+		else if(amelia<70){		ocena_amelii="D";}
+		else if(amelia<80){		ocena_amelii="C";}
+		else if(amelia<90){		ocena_amelii="B";}
+		else{	ocena_amelii="A";}
+		document.write("<br>Ocena Amelii: "+ocena_amelii);
+		
+		document.write("<br><br>Zadanie 7<br>");
+		for(let o=1; o<=100; o++){
+			if(o%3==0 && o%5==0){
+				document.write("BigMike<br>");
+			}else if(o%3==0){
+				document.write("Big<br>");
+			}else if(o%5==0){
+				document.write("Mike<br>");
+			}else{
+				document.write(o+"<br>");
+			}
+		}
+		
+		/*document.write("<br>Zadanie 8<br>");
+		let szczesliwe_liczby=[];
+		let ile_liczb=0;
+		let liczby=1;
+		while(ile_liczb<5)
+		{
+			let suma_kwadratow=liczby;
+			let g=String(suma_kwadratow);
+			suma_kwadratow=0;
+			let cyfry=[];
+			while(suma_kwadratow!=1 && suma_kwadratow!=liczby)
+			{
+				if(suma_kwadratow!=0){
+					g=String(suma_kwadratow);
+				}
+				suma_kwadratow=0;
+				for(let k=0; k<g.length; k++)
+				{
+					cyfry[k]=Number(g.charAt(k));
+					suma_kwadratow=suma_kwadratow+(cyfry[k]*cyfry[k]);
+				}
+			}
+			if(suma_kwadratow==1){
+				szczesliwe_liczby[ile_liczb]=liczby;
+				ile_liczb++;
+			}
+			liczby++;
+		}
+		document.write("Szczęśliwe liczby: <br>");
+		for(let e=0; e<5; e++){
+			document.write(szczesliwe_liczby[e]+"<br>");
+		}*/
+		
+		document.write("<br>Zadanie 9<br>");
+		let tablica=[];
+		let ilosc=0;
+		for(let liczba=100; liczba<1000; liczba++){
+			let l=String(liczba);
+			let wynik=0;
+			let tab=[];
+			for(let u=0; u<l.length; u++){
+				tab[u]=Number(l.charAt(u));
+				wynik=wynik+tab[u]*tab[u]*tab[u];
+			}
+			if(wynik==liczba){
+				tablica[ilosc]=liczba;
+				ilosc++;
+			}
+		}
+		for(let h=0; h<ilosc; h++){
+			document.write(tablica[h]+"<br>");
+		}
+		
+		document.write("<br>Zadanie 10<br>");
+		for(let p=1; p<=5; p++){
+			for(let q=1; q<=p; q++){
+				document.write("*");
+			}
+			document.write("<br>");
+		}
+		
+		document.write("<br>Zadanie 11<br>");
+		let pierwsza=100;
+		let druga=1000;
+		let nwd;
+		let naj;
+		if(pierwsza<druga){ naj=pierwsza} 
+		else{ naj=druga}
+		for(let r=1; r<=naj; r++){
+			if(pierwsza%r==0 && druga%r==0){
+				nwd=r;
+			}
+		}
+		document.write("NWD: "+nwd);
+		
+		document.write("<br><br>Zadanie 12<br>");
+		let suma=0;
+		for(let f=1; f<1000; f++){
+			if(f%3==0 || f%5==0){
+				suma+=f;
+			}
+		}
+		document.write("Suma: "+suma);
+	</script>
+</body>
+</html>
